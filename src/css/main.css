@@ -75,6 +75,26 @@ video {
 
 /* 01. Sélecteurs CSS */
 
+h3,
+h4 {
+  font-family: Baskerville;
+}
+
+li.first.highlighted {
+  background-color: #faf0ca;
+}
+
+.section-sport h4 {
+  color: #78290f;
+}
+
+.section-regions .first {
+  font-weight: bold;
+}
+
+.section-culture h4 {
+  color: #15616d;
+}
 /* 02. Centrer horizontalement */
 
 .calltoaction {
@@ -83,6 +103,21 @@ video {
   background: #fdf0d5;
   border: 1px solid #c1121f;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calltoaction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .link {
@@ -103,6 +138,8 @@ video {
   padding: 20px;
   border-radius: 10px;
   background: #669bbc;
+  display: flex;
+  align-items: center;
 }
 
 .button {
@@ -111,6 +148,53 @@ video {
   background: #780000;
   color: #fdf0d5;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
 }
 
 /* 04. Intégration */
+.figmaquette {
+  display: flex;
+  flex-direction: column;
+}
+
+.nom {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+  h1 {
+    color: #000;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 100% */
+  }
+  h2 {
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.bas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  padding: 0px 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #fff;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.profil {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
